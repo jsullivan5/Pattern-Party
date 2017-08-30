@@ -3,10 +3,76 @@
   <head>
     <meta charset="utf-8">
     <title>Pattern Party</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1>HEllO</h1>
+    <header>
+      <h1 id="logo">PATTERN <span>PARTY</span></h1>
+      <h3>James Sullivan</h3>
+    </header>
+    <p>ACCORDION TABS</p>
+    <hr align="center">
+    <section class="accordion-wrapper">
+      <nav class="tab-wrapper">
+        <div class="tab tab-active " data-tab="1">
+          <p>Tab 1</p>
+        </div>
+        <div class="tab" data-tab="2">
+          <p>Tab 2</p>
+        </div>
+        <div class="tab" data-tab="3">
+          <p>Tab 3</p>
+        </div>
+        <div class="tab" data-tab="4">
+          <p>Tab 4</p>
+        </div>
+      </nav>
+      <div class="content-wrapper">
+        <div class="section-body" data-tab="1">
+          <img class="accordion-img"src="http://www.fillmurray.com/420/480" alt="image description">
+          <div class="accordion-text-content">
+            <h4>8-bit live-edge small batch intelligentsia</h4>
+            <hr>
+            <p> Fam portland lo-fi YOLO, put a bird on it chillwave knausgaard green juice affogato next level man bun drinking vinegar.  Blue bottle readymade thundercats street art scenester gentrify, yuccie tilde. PBR B heirloom umami wolf crucifix tattooed single-origin coffee helvetica schlitz tote bag.
+            </p>
+            <p>Squid asymmetrical cliche, sustainable prism 3 wolf moon pinterest locavore tbh schlitz copper mug ethical twee hexagon. Humblebrag trust fund woke, cold-pressed godard migas keffiyeh.</p>
+          </div>
+        </div>
+        <div class="section-body hidden" data-tab="2">
+          <img class="accordion-img"src="http://www.fillmurray.com/420/480" alt="image description">
+          <div class="accordion-text-content">
+            <h4>8-bit live-edge small batch intelligentsia</h4>
+            <hr>
+            <p> Franzen poke authentic vape hexagon. Helvetica mumblecore gluten-free, YOLO bicycle rights pop-up keytar hammock man bun williamsburg kickstarter XOXO four dollar toast.
+            </p>
+            <p>Health goth vice banjo vaporware artisan pour-over occupy kogi godard williamsburg pok pok. Ugh hot chicken butcher hexagon kinfolk, raw denim helvetica sustainable. </p>
+          </div>
+        </div>
+        <div class="section-body hidden" data-tab="3">
+          <img class="accordion-img"src="http://www.fillmurray.com/420/480" alt="image description">
+          <div class="accordion-text-content">
+            <h4>8-bit live-edge small batch intelligentsia</h4>
+            <hr>
+            <p> Affogato echo park kickstarter seitan kogi, thundercats shoreditch bitters 90's slow-carb. IPhone hexagon tumeric blog sriracha, PBRB cred pug.
+            </p>
+            <p>Yuccie godard readymade church-key vice DIY. Edison bulb selvage meggings stumptown lo-fi salvia cred actually ramps venmo unicorn photo booth. Fanny pack offal jean shorts, banh mi gochujang chartreuse forage etsy +1 activated charcoal succulents lomo prism sartorial.</p>
+          </div>
+        </div>
+        <div class="section-body hidden" data-tab="4">
+          <img class="accordion-img"src="http://www.fillmurray.com/420/480" alt="image description">
+          <div class="accordion-text-content">
+            <h4>8-bit live-edge small batch intelligentsia</h4>
+            <hr>
+            <p> Williamsburg banjo snackwave, yr aesthetic tote bag yuccie sustainable enamel pin portland dreamcatcher food truck kinfolk cray adaptogen. Fanny pack semiotics meditation jianbing tattooed copper mug af DIY kitsch shoreditch photo booth fam.
+            </p>
+            <p>Meggings messenger bag pop-up PBRB snackwave kickstarter, health goth gochujang. Meggings pok pok af art party small batch keytar church-key gentrify. Kogi farm-to-table austin salvia fingerstache ramps green juice selfies woke gochujang.</p>
+          </div>
+        </div>
+    </div>
+    </section>
+    <button class="view-code"type="button" name="button">VIEW CODE</button>
     <script src="scripts.js"></script>
   </body>
 </html>
