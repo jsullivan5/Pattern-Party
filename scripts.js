@@ -1,5 +1,3 @@
-
-
 $('.tab').click((event) => {
   const $newActiveTab = event.target
     .closest('.tab');
