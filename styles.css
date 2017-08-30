@@ -72,12 +72,6 @@ hr {
   position:relative;
 }
 
-.content-wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .section-body {
   display: flex;
   border: 1px solid #F2F2F2;
@@ -118,4 +112,32 @@ hr {
   margin: 50px auto;
   text-align: center;
   width: 200px;
+}
+
+@media screen and (max-width: 850px) {
+  .accordion-wrapper {
+    width: 90%
+  }
+
+
+
+  .section-body {
+    flex-direction: column;
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .accordion-wrapper {
+    display: table;
+  }
+  .tab-wrapper {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .tab {
+    height: 30px;
+    width: 100%;
+  }
 }
