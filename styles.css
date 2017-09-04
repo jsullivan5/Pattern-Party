@@ -132,6 +132,7 @@ hr {
   .accordion-wrapper {
     display: table;
   }
+
   .tab-wrapper {
     flex-direction: column;
     height: unset;
@@ -140,5 +141,137 @@ hr {
   .tab {
     height: 30px;
     width: 100%;
+  }
+}
+
+/*Flexible Cards*/
+
+
+
+.card-wrapper {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  width: 800px;
+}
+
+/*.card {
+  display: flex;
+}*/
+
+.card-title {
+  border: 1px solid #F2F2F2;
+  padding: 5px;
+}
+
+.card-img {
+  border: 1px solid #F2F2F2;
+  border-top: none;
+  height: 200px;
+  width: 100%;
+}
+
+.card-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.card-2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.card-3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.card-4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.card-5 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.card-6 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.card-7 {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
+
+@media screen and (max-width: 850px) {
+  .card-wrapper {
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+
+  .card-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .card-2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .card-3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .card-4 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .card-5 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .card-6 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .card-7 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card-wrapper {
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .card-2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .card-3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .card-4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .card-5 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .card-6 {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .card-7 {
+    grid-column: 1;
+    grid-row: 7;
   }
 }
