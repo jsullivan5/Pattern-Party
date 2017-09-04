@@ -146,8 +146,6 @@ hr {
 
 /*Flexible Cards*/
 
-
-
 .card-wrapper {
   display: grid;
   grid-auto-rows: minmax(100px, auto);
@@ -156,10 +154,6 @@ hr {
   margin: 0 auto;
   width: 800px;
 }
-
-/*.card {
-  display: flex;
-}*/
 
 .card-title {
   border: 1px solid #F2F2F2;
