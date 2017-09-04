@@ -57,6 +57,13 @@ hr {
   width: 25%;
 }
 
+nav {
+  position: relative;
+  margin-bottom: 400px;
+}
+
+
+
 .tab-active {
   background-color: #FFF;
   border: 1px solid #F2F2F2;
@@ -68,16 +75,16 @@ hr {
   height: 300px;
 }
 
-.content-wrapper {
-  position:relative;
-}
-
 .section-body {
   display: flex;
   border: 1px solid #F2F2F2;
   border-top: none;
+  flex-direction: row;
   height: 350px;
   padding: 25px;
+  position: absolute;
+  bottom: -350px;
+  left: 0;
 }
 
 .hidden {
@@ -120,17 +127,18 @@ hr {
     width: 90%
   }
 
-
+  .accordion-img {
+    height: 300px;
+    width: 280px;
+    margin: 0 auto;
+  }
 
   .section-body {
-    flex-direction: column;
-    height: unset;
+    position: unset;
   }
-}
 
-@media screen and (max-width: 450px) {
-  .accordion-wrapper {
-    display: table;
+  nav {
+    position: unset;
   }
 
   .tab-wrapper {
@@ -141,6 +149,11 @@ hr {
   .tab {
     height: 30px;
     width: 100%;
+  }
+
+  .section-body {
+    flex-direction: column;
+    height: unset;
   }
 }
 
