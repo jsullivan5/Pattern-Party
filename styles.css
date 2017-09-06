@@ -161,9 +161,9 @@ nav {
 
 .card-wrapper {
   display: grid;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(33.3333%, 33.333%);
   grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 33.3333%);
   margin: 0 auto;
   width: 800px;
 }
@@ -171,6 +171,13 @@ nav {
 .card-title {
   border: 1px solid #F2F2F2;
   padding: 5px;
+}
+
+.card-title h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .card-img {
@@ -211,9 +218,9 @@ nav {
 
 @media screen and (max-width: 850px) {
   .card-wrapper {
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(50%, 50%);
     grid-gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
     width: 90%;
   }
 
@@ -249,8 +256,8 @@ nav {
 
 @media screen and (max-width: 450px) {
   .card-wrapper {
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100%, auto);
+    grid-template-columns: repeat(1, 100%);
   }
 
   .card-1 {
