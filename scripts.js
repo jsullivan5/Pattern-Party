@@ -1,3 +1,4 @@
+// Accordion Tabs
 $('.tab').click((event) => {
   const $newActiveTab = event.target
     .closest('.tab');
@@ -12,5 +13,14 @@ $('.tab').click((event) => {
     } else {
       $(element).addClass('hidden');
     }
-  })
-})
+  });
+});
+
+// Collapsible Nav
+
+$('.nav-logo-wrapper').click(() => {
+  const width = $(window).width();
+  if (width <= 650) {
+    $('.nav-link-wrapper').toggleClass('hidden');
+  }
+});
